@@ -5,6 +5,7 @@ def matrix_mul(mat1, mat2):
     :param mat2: matrix 2
     :return: result matrix
     """
+    global counter
     if len(mat1[0]) != len(mat2):
         print("Error")
         return
@@ -23,14 +24,16 @@ def matrix_mul(mat1, mat2):
     for r in res:
         print(r)
     print('\n')
-
+    save_mat(mat2)
+    counter += 1
+    print('used with',counter,'elemtery matrix' )
     return res
 
 def elemReset(mat1):
     el_mat = []
-    List = [0] * len(mat1)
+    list1 = [0] * len(mat1)
     for i in range(len(mat1)):  # create matrix with only 0
-        el_mat.append(List.copy())
+        el_mat.append(list1.copy())
 
     for j in range(len(el_mat)):  # create identity matrix
         for k in range(len(el_mat)):
@@ -41,14 +44,14 @@ def elemReset(mat1):
 
 def matrix(mat1):
     el_mat = elemReset(mat1)
-    check = el_mat.copy()
+    check = elemReset(mat1)
 
     i = 0
     flag = -1
     j = 0
 
     while check != mat1:  #while the matrix still not identity
-        while j <= len(mat1):
+        while j < len(mat1):
             if mat1[i][0] == 0.0:
                 flag = i
                 i += 1
@@ -56,26 +59,32 @@ def matrix(mat1):
                 temp = el_mat[flag]
                 el_mat[flag] = el_mat[i]
                 el_mat[i] = temp
+                break
 
             j += 1
+        if flag == len(mat1)-1:
+            print("There is no solution for this matrix")
+            return
 
-        if flag == -1:
+        if flag != -1:
+            mat1 = matrix_mul(el_mat, mat1)
+
+        if flag == -1 :
             for col in range(len(mat1)):
                 for row in range(len(mat1)):
                     if col == row and mat1[col][row] != 1:
-                        el_mat[col][row] = 1/mat1[col][row]
-                        save_mat(el_mat)
+                        el_mat[col][row] =float(1/mat1[col][row])
                         mat1 = matrix_mul(mat1, el_mat)
                         el_mat = elemReset(mat1)
 
-                    elif mat1[col][row] != 0 and col != row:
-                        el_mat[col][row] = - mat1[col][row]  #problem with numbers that not complete
-                        save_mat(el_mat)
+                    elif mat1[col][row] != 0.0 and col != row:
+                        # if int(col+1) == len(mat1) and row == 0 and mat1[len(mat1)-1][len(mat1)-1] != 0 :
+                        #         el_mat[col][row] = float(-mat1[col][row]/mat1[len(mat1)-1][len(mat1)-1])
+                        # else:
+                        el_mat[col][row] = float(-mat1[col][row])  #problem with numbers that not complete
                         mat1 = matrix_mul(mat1, el_mat)
                         el_mat = elemReset(mat1)
 
-        save_mat(el_mat)
-        mat1 = matrix_mul(el_mat, mat1)
         j = 0
         i = 0
         el_mat = elemReset(mat1)
@@ -90,15 +99,12 @@ def save_mat(mat1):
         f.write('\n')
 
 
+counter = 0
 
 
-
-
-
-
-X = [[0,7,3],
-    [2 ,5,6],
-    [7 ,8,9]]
+X = [[0,0,9],
+    [1,17,3],
+    [0 ,1,61]]
 
 matrix(X)
 
