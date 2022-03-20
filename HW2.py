@@ -6,9 +6,7 @@ def matrix_mul(mat1, mat2):
     :return: result matrix
     """
     global counter
-    if len(mat1[0]) != len(mat2):
-        print("Error")
-        return
+
     result = []
     res = []
     temp = []
@@ -30,12 +28,12 @@ def matrix_mul(mat1, mat2):
 
 def elemReset(mat1):
     el_mat = []
-    list1 = [0] * len(mat1)
-    for i in range(len(mat1)):  # create matrix with only 0
+    list1 = [0] * len(mat1[0])
+    for i in range(len(mat1[0])):  # create matrix with only 0
         el_mat.append(list1.copy())
 
-    for j in range(len(el_mat)):  # create identity matrix
-        for k in range(len(el_mat)):
+    for j in range(len(el_mat[0])):  # create identity matrix
+        for k in range(len(el_mat[0])):
             if j == k:
                 el_mat[j][k] = 1
     return el_mat
@@ -46,18 +44,17 @@ def matrix(mat1):
     check = elemReset(mat1)
 
     flag = -1
-    checker = True
 
     """
-    [[1,5,9],
-    [0,0,3],
-    [1 ,0,61]]
+    [[1,17,3],
+    [0,0,9],
+    [0 ,1,61]]
     """
 
     for i in range(len(mat1)):
         if mat1[i][0] == 0.0:
             flag = i
-        elif flag != -1:
+        elif flag != i:
             temp = el_mat[flag]
             el_mat[flag] = el_mat[i]
             el_mat[i] = temp
@@ -68,13 +65,14 @@ def matrix(mat1):
         return
 
     if flag != -1:
-        mat1 = matrix_mul(el_mat, mat1)
+        mat1 = matrix_mul(mat1,el_mat)
 
     while check != mat1:  #while the matrix still not identity
 
         for col in range(len(mat1)):
             for row in range(len(mat1)):
-                if col == row and mat1[col][row] != 1:
+
+                if col == row and mat1[col][row] != 1 and mat1[col][row] != 0:
                     el_mat[col][row] = float(1 / mat1[col][row])
                     mat1 = matrix_mul(mat1, el_mat)
                     el_mat = elemReset(mat1)
@@ -96,14 +94,14 @@ def save_mat(mat1):
 counter = 0
 
 
-X = [[1,5,9],
-    [0,0,3],
-    [1 ,0,61]]
+X = [[1,17,3],
+    [0,0,9],
+    [0 ,1,61]]
 
 
 
 matrix(X)
-print('used with', counter, 'elementary matrix')
+print('used with', counter, 'elementary matrices')
 
 Y = [[5,8,1,2],
     [6,7,3,0],
