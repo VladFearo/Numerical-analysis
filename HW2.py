@@ -1,3 +1,4 @@
+import numpy as np
 def matrix_mul(mat1, mat2):
     """
     Function to multiply two matrices using nested loops
@@ -40,16 +41,15 @@ def elemReset(mat1):
 
 
 def matrix(mat1):
+    X = []
+    for i in mat1:
+        X.append(i.pop(-1))
+
+    Z = np.linalg.inv(mat1).dot(X)
     el_mat = elemReset(mat1)
     check = elemReset(mat1)
 
     flag = -1
-
-    """
-    [[1,17,3],
-    [0,0,9],
-    [0 ,1,61]]
-    """
 
     for i in range(len(mat1)):
         if mat1[i][0] == 0.0:
@@ -66,6 +66,7 @@ def matrix(mat1):
 
     if flag != -1:
         mat1 = matrix_mul(mat1,el_mat)
+    el_mat = elemReset(mat1)
 
     while check != mat1:  #while the matrix still not identity
 
@@ -81,7 +82,7 @@ def matrix(mat1):
                     el_mat[col][row] = float(-mat1[col][row])
                     mat1 = matrix_mul(mat1, el_mat)
                     el_mat = elemReset(mat1)
-
+    print('the soloution is', Z)
 
 def save_mat(mat1):
     with open('elem_matrix.txt','a') as f:
@@ -98,14 +99,13 @@ X = [[1,17,3],
     [0,0,9],
     [0 ,1,61]]
 
+Y = [[1,1,1,6],
+    [1,2,5,-4],
+    [2,5,-1,27]]
 
+matrix(Y)
 
-matrix(X)
 print('used with', counter, 'elementary matrices')
-
-Y = [[5,8,1,2],
-    [6,7,3,0],
-    [4,5,9,1]]
 
 
 
