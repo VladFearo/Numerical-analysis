@@ -1,4 +1,3 @@
-import numpy as np
 def matrix_mul(mat1, mat2):
     """
     Function to multiply two matrices using nested loops
@@ -6,7 +5,6 @@ def matrix_mul(mat1, mat2):
     :param mat2: matrix 2
     :return: result matrix
     """
-    global counter
 
     result = []
     res = []
@@ -23,8 +21,7 @@ def matrix_mul(mat1, mat2):
     for r in res:
         print(r)
     print('\n')
-    save_mat(mat2)
-    counter += 1
+    save_mat(mat1)
     return res
 
 def elemReset(mat1):
@@ -43,9 +40,8 @@ def elemReset(mat1):
 def matrix(mat1):
     X = []
     for i in mat1:
-        X.append(i.pop(-1))
+        X.append([i.pop(-1)])
 
-    Z = np.linalg.inv(mat1).dot(X)
     el_mat = elemReset(mat1)
     check = elemReset(mat1)
 
@@ -65,7 +61,8 @@ def matrix(mat1):
         return
 
     if flag != -1:
-        mat1 = matrix_mul(mat1,el_mat)
+        mat1 = matrix_mul(el_mat, mat1)
+        X = matrix_mul(el_mat, X)
     el_mat = elemReset(mat1)
 
     while check != mat1:  #while the matrix still not identity
@@ -75,17 +72,32 @@ def matrix(mat1):
 
                 if col == row and mat1[col][row] != 1 and mat1[col][row] != 0:
                     el_mat[col][row] = float(1 / mat1[col][row])
-                    mat1 = matrix_mul(mat1, el_mat)
+                    mat1 = matrix_mul(el_mat, mat1)
+                    X = matrix_mul(el_mat, X)
                     el_mat = elemReset(mat1)
 
                 elif mat1[col][row] != 0.0 and col != row:
-                    el_mat[col][row] = float(-mat1[col][row]/mat1[col][col])
-                    mat1 = matrix_mul(mat1, el_mat)
+                    el_mat[col][row] = float(-mat1[col][row])
+                    mat1 = matrix_mul(el_mat, mat1)
+                    X = matrix_mul(el_mat, X)
                     el_mat = elemReset(mat1)
-    print('the soloution is', Z)
+    tempM = []
+    for i in X:
+        tempM.append(i[0])
+    print(tempM)
+    X = list(map(round, tempM))
+    print('the soloution is', X)
+
 
 def save_mat(mat1):
-    with open('elem_matrix.txt','a') as f:
+    global counter
+    global cache
+    if mat1 not in cache:
+        cache.append(mat1)
+        counter += 1
+    else:
+        return
+    with open('elem_matrix.txt', 'a') as f:
         for i in mat1:
             f.writelines(str(i))
             f.write('\n')
@@ -93,14 +105,14 @@ def save_mat(mat1):
 
 
 counter = 0
-
+cache = []
 
 X = [[1,17,3],
     [0,0,9],
     [0 ,1,61]]
 
 Y = [[1,1,1,6],
-    [0,2,5,-4],
+    [1,2,5,-4],
     [2,5,-1,27]]
 
 matrix(Y)
