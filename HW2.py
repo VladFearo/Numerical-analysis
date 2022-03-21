@@ -79,7 +79,7 @@ def matrix(mat1):
                     el_mat = elemReset(mat1)
 
                 elif mat1[col][row] != 0.0 and col != row:
-                    el_mat[col][row] = float(-mat1[col][row])
+                    el_mat[col][row] = float(-mat1[col][row]/mat1[col][col])
                     mat1 = matrix_mul(mat1, el_mat)
                     el_mat = elemReset(mat1)
     print('the soloution is', Z)
@@ -100,7 +100,7 @@ X = [[1,17,3],
     [0 ,1,61]]
 
 Y = [[1,1,1,6],
-    [1,2,5,-4],
+    [0,2,5,-4],
     [2,5,-1,27]]
 
 matrix(Y)
