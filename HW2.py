@@ -1,11 +1,10 @@
 def matrix_mul(mat1, mat2):
     """
     Function to multiply two matrices using nested loops
-    :param mat1: matrix 1
-    :param mat2: matrix 2
-    :return: result matrix
+    :param mat1: Matrix 1
+    :param mat2: Matrix 2
+    :return: Result matrix
     """
-
     result = []
     res = []
     temp = []
@@ -25,6 +24,11 @@ def matrix_mul(mat1, mat2):
     return res
 
 def elemReset(mat1):
+    """
+    Function to crate and initialize elementary matrices
+    :param mat1: Matrix
+    :return: Elementary matrix
+    """
     el_mat = []
     list1 = [0] * len(mat1[0])
     for i in range(len(mat1[0])):  # create matrix with only 0
@@ -36,8 +40,13 @@ def elemReset(mat1):
                 el_mat[j][k] = 1
     return el_mat
 
-
 def matrix(mat1):
+    """
+    Function to find a solution based on the given matrix
+    using the elementary method
+    :param mat1: Matrix
+    :return: None (print only)
+    """
     X = []
     for i in mat1:
         X.append([i.pop(-1)])
@@ -104,8 +113,12 @@ def matrix(mat1):
     X = list(map(lambda x: round(x,9) , tempM))
     print('the solution is', X)
 
-
 def save_mat(mat1):
+    """
+    Function to copy and save all elementary matrices
+    :param mat1: Matrix
+    :return: None
+    """
     global counter
     global cache
     if mat1 not in cache:
@@ -119,7 +132,7 @@ def save_mat(mat1):
             f.write('\n')
         f.write('\n')
 
-
+# Driver
 counter = 0
 cache = []
 
