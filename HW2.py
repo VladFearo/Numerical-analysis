@@ -17,6 +17,10 @@ def matrix_mul(mat1, mat2):
         temp2 = result.copy()
         res.append(temp2)
         result.clear()
+    if len(res[0])==1:
+        print("Solution vector: ")
+    else:
+        print("Matrix being solved: ")
     for r in res:
         print(r)
     print('\n')
@@ -92,9 +96,8 @@ def matrix(mat1):
     tempM = []
     for i in X:
         tempM.append(i[0])
-    #print(tempM)
-    X = list(map(lambda x: round(x,9) , tempM))
-    print('the solution is', X)
+    X = list(map(lambda x: round(x, 9), tempM))
+    print('the solution vector is:', X)
 
 def save_mat(mat1):
     """
@@ -110,6 +113,7 @@ def save_mat(mat1):
     else:
         return
     with open('elem_matrix.txt', 'a') as f:
+        f.writelines("Elementary matrix number " + str(counter) + ":\n")
         for i in mat1:
             f.writelines(str(i))
             f.write('\n')
@@ -129,7 +133,7 @@ Y = [[1,1,1,6],
 
 matrix(Y)
 
-print('used with', counter, 'elementary matrices')
+print('solved with', counter, 'elementary matrices')
 
 
 
