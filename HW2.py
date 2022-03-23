@@ -71,38 +71,21 @@ def matrix(mat1):
                 saveZero = -1
 
 
-
-    # for i in range(len(mat1)):
-    #     if mat1[i][0] == 0.0:
-    #         flag = i
-    #     elif flag != i:
-    #         temp = el_mat[flag]
-    #         el_mat[flag] = el_mat[i]
-    #         el_mat[i] = temp
-    #         break
-    #
-    # if flag == len(mat1) - 1:
-    #     print("There is no solution for this matrix")
-    #     return
-    #
-    # if flag != -1:
-    #     mat1 = matrix_mul(el_mat, mat1)
-    #     X = matrix_mul(el_mat, X)
     el_mat = elemReset(mat1)
 
     while check != mat1:  #while the matrix still not identity
 
-        for col in range(len(mat1)):
-            for row in range(len(mat1)):
+        for row in range(len(mat1)):
+            for col in range(len(mat1)):
 
-                if col == row and mat1[col][row] != 1 and mat1[col][row] != 0:
-                    el_mat[col][row] = float(1 / mat1[col][row])
+                if col == row and mat1[row][col] != 1 and mat1[row][col] != 0:
+                    el_mat[row][col] = float(1 / mat1[row][col])
                     mat1 = matrix_mul(el_mat, mat1)
                     X = matrix_mul(el_mat, X)
                     el_mat = elemReset(mat1)
 
-                elif mat1[col][row] != 0.0 and col != row:
-                    el_mat[col][row] = float(-mat1[col][row])
+                elif mat1[row][col] != 0.0 and col != row:
+                    el_mat[row][col] = float(-mat1[row][col]/mat1[col][col])
                     mat1 = matrix_mul(el_mat, mat1)
                     X = matrix_mul(el_mat, X)
                     el_mat = elemReset(mat1)
@@ -140,7 +123,7 @@ X = [[1,17,3],
     [0,0,9],
     [0 ,1,61]]
 
-Y = [[0,1,1,6],
+Y = [[1,1,1,6],
     [1,2,5,-4],
     [2,5,-1,27]]
 
