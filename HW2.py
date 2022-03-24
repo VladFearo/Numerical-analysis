@@ -57,22 +57,24 @@ def matrix(mat1):
 
     el_mat = elemReset(mat1)
     check = elemReset(mat1)
-
-    flag = -1
-    saveZero =-1
-
+    saveZero = -1
+    mat1, X = biggest_pivot(mat1, X)
     for row in range(len(mat1)):
         for col in range(len(mat1)):
             if mat1[col][row] == 0.0 and col == row:
                 saveZero = col
             elif mat1[col][row] != 0.0 and col != row and saveZero!= -1:
-                el_mat=elemReset(el_mat)
+                el_mat = elemReset(el_mat)
                 temp = el_mat[saveZero]
                 el_mat[saveZero] = el_mat[col]
                 el_mat[col] = temp
                 mat1 = matrix_mul(el_mat, mat1)
                 X = matrix_mul(el_mat,X)
                 saveZero = -1
+
+
+
+
 
 
     el_mat = elemReset(mat1)
@@ -119,6 +121,37 @@ def save_mat(mat1):
             f.write('\n')
         f.write('\n')
 
+
+def biggest_pivot(mat, X):
+    """
+        finds the max pivot on the matrix and changes lines using elementary matrcies
+        :param mat: Matrix
+        :param X: Solution vector
+        :return: Matrix, solution vector
+        """
+    for row in range(len(mat)):
+
+        for col in range(len(mat)):
+            if col == row:
+                biggest = mat[row][col]
+                biggest_row = row
+                for this_row in range(row , len(mat)):
+                    if mat[this_row][col] > biggest:
+                        biggest_row = this_row
+                        biggest = mat[this_row][col]
+                el_mat = elemReset(mat)
+                temp = el_mat[row]
+                el_mat[row] = el_mat[biggest_row]
+                el_mat[biggest_row] = temp
+                mat = matrix_mul(el_mat, mat)
+                X = matrix_mul(el_mat, X)
+    print('matrix after max pivot:')
+    for x in mat:
+        print(x)
+    print('\n')
+    return mat, X
+
+
 # Driver
 counter = 0
 cache = []
@@ -132,6 +165,7 @@ Y = [[1,1,1,6],
     [2,5,-1,27]]
 
 matrix(Y)
+#biggest_pivot(X , [[1],[2],[3]])
 
 print('solved with', counter, 'elementary matrices')
 
