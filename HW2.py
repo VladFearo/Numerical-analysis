@@ -17,15 +17,16 @@ def matrix_mul(mat1, mat2):
         temp2 = result.copy()
         res.append(temp2)
         result.clear()
-    if len(res[0])==1:
-        print("Solution vector: ")
-    else:
-        print("Matrix being solved: ")
-    for r in res:
-        print(r)
+    if len(res[0]) > 1:
+        for i in range(len(mat1)):
+            if i == 1:
+                print(mat1[i], '  \t  *  \t  ', mat2[i],'  \t = \t  ', res[i])
+            else:
+                print(mat1[i], '    \t\t     ', mat2[i],'  \t\t     ', res[i])
     print('\n')
     save_mat(mat1)
     return res
+
 
 def elemReset(mat1):
     """
@@ -160,9 +161,9 @@ X = [[1,17,3],
     [0,0,9],
     [0 ,1,61]]
 
-Y = [[1,1,1,6],
-    [1,2,5,-4],
-    [2,5,-1,27]]
+Y = [[1,2,-2,7],
+    [1,1,1,2],
+    [2,2,1,5]]
 
 matrix(Y)
 #biggest_pivot(X , [[1],[2],[3]])
