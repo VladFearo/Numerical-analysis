@@ -20,9 +20,9 @@ def matrix_mul(mat1, mat2):
     if len(res[0]) > 1:
         for i in range(len(mat1)):
             if i == 1:
-                print(mat1[i], '  \t  *  \t  ', mat2[i],'  \t = \t  ', res[i])
+                print(mat1[i], '  \t  *  \t ', mat2[i],'  \t = \t  ', res[i])
             else:
-                print(mat1[i], '    \t\t     ', mat2[i],'  \t\t     ', res[i])
+                print(mat1[i], '    \t\t    ', mat2[i],'  \t\t     ', res[i])
     print('\n')
     save_mat(mat1)
     return res
@@ -157,16 +157,13 @@ def biggest_pivot(mat, X):
 counter = 0
 cache = []
 
-X = [[1,17,3],
-    [0,0,9],
-    [0 ,1,61]]
 
-Y = [[1,2,-2,7],
-    [1,1,1,2],
-    [2,2,1,5]]
+
+Y = [[-1,3,1,-4],
+    [4,1,-1,5],
+    [2,2,5,1]]
 
 matrix(Y)
-#biggest_pivot(X , [[1],[2],[3]])
 
 print('solved with', counter, 'elementary matrices')
 
