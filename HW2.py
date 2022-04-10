@@ -20,9 +20,9 @@ def matrix_mul(mat1, mat2):
     if len(res[0]) > 1:
         for i in range(len(mat1)):
             if i == 1:
-                print(mat1[i], '  \t  *  \t ', mat2[i],'  \t = \t  ', res[i])
+                print(list(map(lambda x: round(x, 2), mat1[i])), ' * ', list(map(lambda x: round(x, 2), mat2[i])),' =\t', list(map(lambda x: round(x, 2), res[i])))
             else:
-                print(mat1[i], '    \t\t    ', mat2[i],'  \t\t     ', res[i])
+                print(list(map(lambda x: round(x, 2), mat1[i])), '   ', list(map(lambda x: round(x, 2), mat2[i])),'   \t\t', list(map(lambda x: round(x, 2), res[i])))
     print('\n')
     save_mat(mat1)
     return res
@@ -99,7 +99,7 @@ def matrix(mat1):
     tempM = []
     for i in X:
         tempM.append(i[0])
-    X = list(map(lambda x: round(x, 9), tempM))
+    X = list(map(lambda x: round(x, 2), tempM))
     print('the solution vector is:', X)
 
 def save_mat(mat1):
@@ -159,11 +159,12 @@ cache = []
 
 
 
-Y = [[-1,3,1,-4],
-    [4,1,-1,5],
-    [2,2,5,1]]
+Y = [[1,0,-1,0.2],
+    [-0.5,1,-0.25,-1.425],
+    [1,-0.5,1,2]]
 
 matrix(Y)
+
 
 print('solved with', counter, 'elementary matrices')
 
