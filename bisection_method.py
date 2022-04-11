@@ -50,6 +50,8 @@ def print_poly(poly):
 
 def create_poly_func(f):
     """
+
+
     creates a python function repressenting a polynomial function
     :param f: a list repressenting a polynomial function
     :return: a python function repressenting a polynomial function
