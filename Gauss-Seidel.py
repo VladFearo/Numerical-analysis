@@ -1,17 +1,15 @@
 import numpy as np
 
-a = np.array(
-    [[50, 0, -15],
-    [-5, 50, -25],
-    [1, -5, 50]])
-b = np.array([50, -25, 20])
+a = np.array(  # n x n matrix
+    [[1,0,-1],
+    [-0.5,1,-0.25,],
+    [0,0,1,]])
+b = np.array([0.2, -1.425, 2])  #solution vector
 
-x = np.linalg.solve(a, b)
-print(x)
+x = np.linalg.solve(a, b)  #matrix solution
 
 
 def gauss_seidel(A, b):
-
     xn, yn, zn = 0, 0, 0
     counter = 1
     if dominant_pivot(A):
@@ -25,7 +23,8 @@ def gauss_seidel(A, b):
             if xn == x[0] and yn == x[1] and zn == x[2]:
                 print('__________________________')
                 print(f'The solution vector is: ')
-                return list(map(lambda y: round(y, 8), [xn, yn, zn]))
+                print(list(map(lambda y: round(y, 8), [xn, yn, zn])))
+                break
 
 
 def dominant_pivot(matrix):
@@ -39,4 +38,4 @@ def dominant_pivot(matrix):
     return True
 
 
-print(gauss_seidel(a, b))
+gauss_seidel(a, b)
