@@ -28,20 +28,23 @@ def print_poly(poly):
     """
     string = ''
     n = len(poly)
-    for x in poly:
-        if x != 0:
+    for x in range(len(poly)):
+        if poly[x] != 0:
             if n == 0:
-                if x>0:
-                    string += f'{x}'
+                if poly[x]>0:
+                    string += f'{poly[x]}'
                 else:
-                    string += f'({x})'
+                    string += f'({poly[x]})'
+            elif poly[x] == 1:
+                string += f'x^{n-1}'
             else:
-                string += f'{x}x^{n-1}'
+                string += f'{poly[x]}x^{n-1}'
         else:
             n -= 1
         n -= 1
-        if n>1:
+        if n > 1 and poly[x+1] > 0:
             string += '+'
+
     print(string)
 
 
@@ -73,20 +76,23 @@ def bisection_method(a, b, f):
     if f(m) != 0:
         if f(a)*f(m)<0:
             bisection_method(a,m,f)
-        if f(m)*f(m)<0:
+        elif f(m)*f(m)<0:
             bisection_method(m,b,f)
+        else:
+            return
+
     return m
 
 
 #      poly = a1x^n+a2^n-1+...+an^1+an+1
-poly = [1,0, -4]
-f=create_poly_func(poly)
+poly = [1, -3, 0, 0]
+f = create_poly_func(poly)
 d_poly = deriv_poly(poly)
-f_d = create_poly_func(d_poly)
+#f_d = create_poly_func(d_poly)
 
 print("Polynomial")
 print_poly(poly)
 print("Derivative of polynomial")
 print_poly(d_poly)
 print(bisection_method(1,3,f))
-print(bisection_method(-1,1,f_d))
+#print(bisection_method(-1,-2,f_d))
