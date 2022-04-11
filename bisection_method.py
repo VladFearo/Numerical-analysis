@@ -20,29 +20,56 @@ def deriv_poly(poly):
     return deriv
 
 
-def print_poly(poly):
+def print_poly(poly1, derive_poly = 0):
     """
     prints a list repressenting a polynomial function in the form of a1x^n+a2x^n-1...an+1
     :param poly: a list repressenting a polynomail function
     :return: None
     """
     string = ''
-    n = len(poly)
-    for x in range(len(poly)):
-        if poly[x] != 0:
-            if n == 0:
-                if poly[x]>0:
-                    string += f'{poly[x]}'
+    if derive_poly != 0:
+        n = len(poly) - 1
+    else:
+        n = len(poly1)
+
+    for x in range(len(poly1)):
+        if poly1[x] != 0:
+
+            if derive_poly != 0 and n == 2:
+                if poly1[x] == 1:
+                    string += f'x'
                 else:
-                    string += f'({poly[x]})'
-            elif poly[x] == 1:
-                string += f'x^{n-1}'
+                    string += f'{poly1[x]}x'
+                    if poly1[x+1] > 0 :
+                        string += "+"
+
+                    if poly[x+1] != 0:
+                        string += f'{poly1[x+1]}'
+                        break
+
+
+            if n == 0:
+                if poly[x] > 0:
+                    string += f'{poly1[x]}'
+                else:
+                    string += f'({poly1[x]})'
+            elif poly1[x] == 1:
+
+                if n > 2:
+                    string += f'x^{n-1}'
+                if n == 2:
+                    string += f'x'
+                if n == 1:
+                    string += f'1'
+
+            elif n == 1:
+                string += f'{poly1[x]}'
             else:
-                string += f'{poly[x]}x^{n-1}'
-        else:
-            n -= 1
+                string += f'{poly1[x]}x^{n-1}'
+        # else:
+        #     n -= 1
         n -= 1
-        if n > 1 and poly[x+1] > 0:
+        if n > 0 and poly1[x+1] > 0:
             string += '+'
 
     print(string)
@@ -75,26 +102,27 @@ def bisection_method(a, b, f):
     :return: a number repressenting the intersection point between the fucntion and the x axis
     """
     m = (a+b)/2
-    if f(m) != 0:
-        if f(a)*f(m)<0:
-            bisection_method(a,m,f)
-        elif f(m)*f(m)<0:
-            bisection_method(m,b,f)
+    if round(f(m), 5) != 0:
+        if f(a) * f(m) < 0:
+            return bisection_method(a, m, f)
+        elif f(m) * f(b) < 0:
+            return bisection_method(m, b, f)
         else:
             return
 
-    return m
+    else:
+        return round(m, 3)
 
 
 #      poly = a1x^n+a2^n-1+...+an^1+an+1
-poly = [1, -3, 0, 0]
+poly = [1, -3, 1, 2]
 f = create_poly_func(poly)
 d_poly = deriv_poly(poly)
-#f_d = create_poly_func(d_poly)
+f_d = create_poly_func(d_poly)
 
 print("Polynomial")
 print_poly(poly)
 print("Derivative of polynomial")
-print_poly(d_poly)
-print(bisection_method(1,3,f))
-#print(bisection_method(-1,-2,f_d))
+print_poly(d_poly, len(poly))
+print(bisection_method(1.9,2.1,f))
+print(bisection_method(1.7,1.819,f_d))
