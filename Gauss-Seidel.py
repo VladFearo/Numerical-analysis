@@ -26,7 +26,8 @@ def gs_calculations(mat, sol):
             counter += 1
             if abs(xn - prev_xn) < epsilon and abs(yn - prev_yn) < epsilon and abs(zn - prev_zn) < epsilon:
                 print('__________________________')
-                print(f'The solution vector is: ')
+                print(f'Calculated with {counter-1} iterations')
+                print('The solution vector is: ')
                 return list(map(lambda y: round(y, 8), [xn, yn, zn]))
             elif counter >= 100:
                 print('__________________________')
@@ -76,6 +77,7 @@ def j_calculations(mat, sol):
             counter += 1
             if abs(xn - next_xn) < epsilon and abs(yn - next_yn) < epsilon and abs(zn - next_zn) < epsilon:
                 print('__________________________')
+                print(f'Calculated with {counter-1} iterations')
                 print(f'The solution vector is: ')
                 return list(map(lambda y: round(y, 8), [xn, yn, zn]))
             elif counter >= 100:
@@ -94,7 +96,13 @@ def dominant_pivot(matrix):
             counter += 1
         j += 1
     return counter == len(matrix)
-
-
-print(gauss_seidel(a, b))
-print(jacobi(a, b))
+while True:
+    choice = input("Choose an option for calculations: \n1.gauss-seidel\n2.jacobi\n")
+    if choice == '1':
+        print(gauss_seidel(a, b))
+        break;
+    elif choice == '2':
+        print(jacobi(a, b))
+        break;
+    else:
+        print("wrong input try again")
