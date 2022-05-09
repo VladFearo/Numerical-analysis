@@ -101,14 +101,3 @@ def secant_method(a, b, f, epsilon):
             return p
         a = b
         b = p
-
-poly = [4, 0, -48, 5]
-f = create_poly_func(poly)
-d_poly = deriv_poly(poly)
-f_d = create_poly_func(d_poly)
-
-print("Polynomial")
-print_poly(poly)
-print("Derivative of polynomial")
-print_poly(d_poly)
-print("answer: ", secant_method(3, 4, f, 0.0001))

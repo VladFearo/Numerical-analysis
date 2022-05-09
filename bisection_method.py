@@ -77,8 +77,6 @@ def print_poly(poly1, derive_poly = 0):
 
 def create_poly_func(f):
     """
-
-
     creates a python function repressenting a polynomial function
     :param f: a list repressenting a polynomial function
     :return: a python function repressenting a polynomial function
@@ -116,17 +114,4 @@ def bisection_method(a, b, f):
     else:
         return round(m, 3)
 
-
 i = 1
-#      poly = a1x^n+a2^n-1+...+an^1+an+1
-poly = [1, 1, -3, 0, 0]
-f = create_poly_func(poly)
-d_poly = deriv_poly(poly)
-f_d = create_poly_func(d_poly)
-
-print("Polynomial")
-print_poly(poly)
-print("Derivative of polynomial")
-print_poly(d_poly, len(poly))
-print("Intersection point:", bisection_method(-3,2,f))
-print("Intersection point:", bisection_method(-3,2,f_d))

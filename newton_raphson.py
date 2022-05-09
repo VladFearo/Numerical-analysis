@@ -83,9 +83,8 @@ def deriv_poly(poly):
     return deriv
 
 
-def newton_raphson(a, b, f, epsilon): #
+def newton_raphson(a, b, f, f_d, epsilon):
     m = (a + b) / 2
-    print(m)
     i = 1
     if f(a) > 0 > f(b) or f(a) < 0 < f(b):
         while True:
@@ -97,16 +96,3 @@ def newton_raphson(a, b, f, epsilon): #
                 return m
     else:
         return False
-
-
-poly = [4, 0, -48, 5]
-f = create_poly_func(poly)
-d_poly = deriv_poly(poly)
-
-f_d = create_poly_func(d_poly)
-
-print("Polynomial")
-print_poly(poly)
-print("Derivative of polynomial")
-print_poly(d_poly)
-newton_raphson(3, 4, f, 0.0001)
