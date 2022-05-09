@@ -82,31 +82,33 @@ def deriv_poly(poly):
             n-=1
     return deriv
 
-
-def newton_raphson(a, b, f, epsilon): #
-    m = (a + b) / 2
-    print(m)
+def secant_method(a, b, f, epsilon):
+    """
+    An iterative method function for finding the roots
+    of a continuous function of one variable.
+    :param a: Start point of the test range
+    :param b: End point of the test range
+    :param f: Polynomial function
+    :param epsilon: Epsilon for solution accuracy
+    :return: The root we were looking for in the given test range
+    """
     i = 1
-    if f(a) > 0 > f(b) or f(a) < 0 < f(b):
-        while True:
-            temp = m
-            m = m - f(m)/f_d(m)
-            print(f'{i}. {m}')
-            i += 1
-            if abs(temp - m) < epsilon:
-                return m
-    else:
-        return False
-
+    while True:
+        p = b - ((f(b) * (b - a)) / (f(b) - f(a)))
+        print(f'Iter: {i}. {p}')
+        i += 1
+        if abs(p - b) < epsilon:
+            return p
+        a = b
+        b = p
 
 poly = [4, 0, -48, 5]
 f = create_poly_func(poly)
 d_poly = deriv_poly(poly)
-
 f_d = create_poly_func(d_poly)
 
 print("Polynomial")
 print_poly(poly)
 print("Derivative of polynomial")
 print_poly(d_poly)
-newton_raphson(3, 4, f, 0.0001)
+print("answer: ", secant_method(3, 4, f, 0.0001))

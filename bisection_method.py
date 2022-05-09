@@ -32,7 +32,7 @@ def print_poly(poly1, derive_poly = 0):
     else:
         n = len(poly1)
 
-    for x in range(len(poly1)):
+    for x in range(len(poly1) - 1):
         if poly1[x] != 0:
 
             if derive_poly != 0 and n == 2:
@@ -93,6 +93,7 @@ def create_poly_func(f):
     return func
 
 
+
 def bisection_method(a, b, f):
     """
     returns an intersection point between a function and the x axis between point a and b using the bisection method
@@ -101,7 +102,10 @@ def bisection_method(a, b, f):
     :param f: a python function repressenting a polynomail function
     :return: a number repressenting the intersection point between the fucntion and the x axis
     """
+    global i
     m = (a+b)/2
+    print(f'Iter {i}: {m}')
+    i += 1
     if round(f(m), 5) != 0:
         if f(a) * f(m) < 0:
             return bisection_method(a, m, f)
@@ -109,13 +113,13 @@ def bisection_method(a, b, f):
             return bisection_method(m, b, f)
         else:
             return
-
     else:
         return round(m, 3)
 
 
+i = 1
 #      poly = a1x^n+a2^n-1+...+an^1+an+1
-poly = [1, -3, 1, 2]
+poly = [1, 1, -3, 0, 0]
 f = create_poly_func(poly)
 d_poly = deriv_poly(poly)
 f_d = create_poly_func(d_poly)
@@ -124,5 +128,5 @@ print("Polynomial")
 print_poly(poly)
 print("Derivative of polynomial")
 print_poly(d_poly, len(poly))
-print(bisection_method(1.9,2.1,f))
-print(bisection_method(1.7,1.819,f_d))
+print("Intersection point:", bisection_method(-3,2,f))
+print("Intersection point:", bisection_method(-3,2,f_d))
