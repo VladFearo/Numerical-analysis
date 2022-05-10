@@ -1,8 +1,3 @@
-"""
-Algorithm to take the derivative of a polynomial
-"""
-
-
 def deriv_poly(poly):
     """
     derives a polynomial list (e.g. [1,2,3] -> x^2+2x+3
@@ -18,7 +13,6 @@ def deriv_poly(poly):
         else:
             n-=1
     return deriv
-
 
 def print_poly(poly1, derive_poly = 0):
     """
@@ -74,7 +68,6 @@ def print_poly(poly1, derive_poly = 0):
 
     print(string)
 
-
 def create_poly_func(f):
     """
     creates a python function repressenting a polynomial function
@@ -89,8 +82,6 @@ def create_poly_func(f):
             n -= 1
         return solution
     return func
-
-
 
 def bisection_method(a, b, f):
     """

@@ -93,12 +93,21 @@ def poly_print(poly, deriv_poly):
     print_poly(d_poly, len(poly))
 
 poly = [4, 0, -48, 5]
+start_point = (float)(input("Enter start point\t"))
+end_point = (float)(input("Enter end point\t"))
+bigRange = (start_point,end_point)
+print(bigRange)
 epsilon = 0.0001
 option = (int)(input('Please choose a method for finding the roots:\n1.Bisection method\n2.Newton raphson\n3.Secant method\n'))
+section = (float)(input('Please enter the section length'))
 f = create_poly_func(poly)
 d_poly = deriv_poly(poly)
 f_d = create_poly_func(d_poly)
 poly_print(poly, d_poly)
+m = (start_point+end_point)/2
+b = end_point-m
+print("m =",m,"\nb =",b)
+
 if option == 1:
     print("Intersection point:", bisection_method.bisection_method(-3, 2, f))
     print("Intersection point:", bisection_method.bisection_method(-3, 2, f_d))
