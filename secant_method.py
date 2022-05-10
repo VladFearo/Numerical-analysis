@@ -3,7 +3,7 @@ def print_poly(poly1, derive_poly = 0):
     prints a list repressenting a polynomial function in the form of a1x^n+a2x^n-1...an+1
     :param poly: a list repressenting a polynomail function
     :return: None
-    """
+    """ # hash
     string = ''
     if derive_poly != 0:
         n = len(poly) - 1
