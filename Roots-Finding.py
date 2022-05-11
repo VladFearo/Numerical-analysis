@@ -1,6 +1,4 @@
-import newton_raphson
-import secant_method
-import bisection_method
+
 import sympy as sp
 
 def deriv_poly(poly):
