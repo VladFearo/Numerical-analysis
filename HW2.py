@@ -163,10 +163,10 @@ Y = [[1,0,-1,0.2],
     [-0.5,1,-0.25,-1.425],
     [1,-0.5,1,2]]
 
-matrix(Y)
+#matrix(Y)
 
 
-print('solved with', counter, 'elementary matrices')
+#print('solved with', counter, 'elementary matrices')
 
 
 

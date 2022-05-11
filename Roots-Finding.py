@@ -1,7 +1,7 @@
 import newton_raphson
 import secant_method
 import bisection_method
-
+import sympy as sp
 
 def deriv_poly(poly):
     """
@@ -12,66 +12,35 @@ def deriv_poly(poly):
     deriv = []
     n = len(poly)
     for x in poly:
-        if x != 0:
-            n -= 1
+        n -= 1
+        if n !=0:
             deriv.append(x * n)
-        else:
-            n -= 1
     return deriv
 
 
-def print_poly(poly1, derive_poly=0):
+def bisection_method(a, b, f, epsilon):
     """
-    prints a list repressenting a polynomial function in the form of a1x^n+a2x^n-1...an+1
-    :param poly: a list repressenting a polynomail function
-    :return: None
+    returns an intersection point between a function and the x axis between point a and b using the bisection method
+    :param a: a number repressenting a point on the x axis
+    :param b: a number repressenting a point on the x axis
+    :param f: a python function repressenting a polynomail function
+    :return: a number repressenting the intersection point between the fucntion and the x axis
     """
-    string = ''
-    if derive_poly != 0:
-        n = len(poly) - 1
+    global i
+    m = (a + b) / 2
+    print(f'Iter {i}: {m}')
+    i += 1
+    if round(f(m), 5) != 0:
+        if f(a) * f(m) < 0:
+            return bisection_method(a, m, f , epsilon)
+        elif f(m) * f(b) < 0:
+            return bisection_method(m, b, f , epsilon)
+        else:
+            i = 1
+            return
     else:
-        n = len(poly1)
-
-    for x in range(len(poly1) - 1):
-        if poly1[x] != 0:
-
-            if derive_poly != 0 and n == 2:
-                if poly1[x] == 1:
-                    string += f'x'
-                else:
-                    string += f'{poly1[x]}x'
-                    if poly1[x + 1] > 0:
-                        string += "+"
-
-                    if poly[x + 1] != 0:
-                        string += f'{poly1[x + 1]}'
-                        break
-
-            if n == 0:
-                if poly[x] > 0:
-                    string += f'{poly1[x]}'
-                else:
-                    string += f'({poly1[x]})'
-            elif poly1[x] == 1:
-
-                if n > 2:
-                    string += f'x^{n - 1}'
-                if n == 2:
-                    string += f'x'
-                if n == 1:
-                    string += f'1'
-
-            elif n == 1:
-                string += f'{poly1[x]}'
-            else:
-                string += f'{poly1[x]}x^{n - 1}'
-        # else:
-        #     n -= 1
-        n -= 1
-        if n > 0 and poly1[x + 1] > 0:
-            string += '+'
-
-    print(string)
+        i = 1
+        return round(m, 3)
 
 
 def create_poly_func(f):
@@ -82,6 +51,9 @@ def create_poly_func(f):
     """
 
     def func(x):
+        # if derive_check == 1:
+        #     n = len(f)
+        # else:
         n = len(f) - 1
         solution = 0
         for poly in f:
@@ -91,38 +63,101 @@ def create_poly_func(f):
 
     return func
 
+def newton_raphson(a, b, f, epsilon):
+    #test = (a+b)/2
+    i = 1
+   # if f(a) > 0 > f(b) or f(a) < 0 < f(b):
+    while True:
+        if(f_d(a)) == 0: #divide by zero
+            break
+        x1 = a - f(a) / f_d(a)
+        print(f'Iter{i}. {x1}')
+        i += 1
+        a = x1
+        if abs(f(x1)) < epsilon:
+            return round(x1, 3)
 
-def poly_print(poly, deriv_poly):
-    print("Polynomial")
-    print_poly(poly)
-    print("Derivative of polynomial")
-    print_poly(d_poly, len(poly))
+    # else:
+    #     return
 
+def secant_method(a, b, f, epsilon):
+    """
+    An iterative method function for finding the roots
+    of a continuous function of one variable.
+    :param a: Start point of the test range
+    :param b: End point of the test range
+    :param f: Polynomial function
+    :param epsilon: Epsilon for solution accuracy
+    :return: The root we were looking for in the given test range
+    """
+    i = 1
+    while True:
+        p = b - ((f(b) * (b - a)) / (f(b) - f(a)))
+        print(f'Iter: {i}. {p}')
+        i += 1
+        if abs(p - b) < epsilon:
+            return round(p, 3)
+        a = b
+        b = p
 
+x = sp.symbols('x')
 poly = [4, 0, -48, 5]
-start_point = (float)(input("Enter start point\t"))
-end_point = (float)(input("Enter end point\t"))
+my_f = 4*x**3 - 48*x + 5
+print("Polynomial: ", my_f)
+my_f1 = sp.diff(my_f, x)
+start_point = 2
+end_point = 4
 bigRange = (start_point, end_point)
-print(bigRange)
-epsilon = 0.0001
-option = int(input('Please choose a method for finding the roots:'
-                   '\n1.Bisection method\n2.Newton raphson\n3.Secant method\n'))
-section = float(input('Please enter the section length'))
+print("Range: ", bigRange)
 f = create_poly_func(poly)
 d_poly = deriv_poly(poly)
 f_d = create_poly_func(d_poly)
-poly_print(poly, d_poly)
 m = (start_point + end_point) / 2
 b = end_point - m
-print("m =", m, "\nb =", b)
-while (f(start_point) > 0 and f(end_point) > 0) or (f(start_point) < 0 and f(end_point) < 0):
-    f(start_point)
+epsilon = 0.0001
+checker = [1, 2, 3, 4]
+option = 5
+i = 1
+answer = set()
+while(option not in checker):
+    try:
+        option = int(input('Please choose a method for finding the roots:'
+                   '\n1.Bisection method\n2.Newton raphson\n3.Secant method\n'))
+
+        end = start_point + 0.1
+        start = start_point
+
+        if option == 1:
+            while end <= end_point:
+                answer.add(bisection_method(start, end, f, epsilon))
+                print("-----------------------")
+                start = end
+                end += 0.1
+
+        elif option == 2:
+            while end <= end_point:
+                answer.add(newton_raphson(start, end, f,  epsilon))
+                print("-----------------------")
+                start = end
+                end += 0.1
+
+        elif option == 3:
+            while end <= end_point:
+                answer.add(secant_method(start, end, f, epsilon))
+                print("-----------------------")
+                start = end
+                end += 0.1
 
 
-if option == 1:
-    print("Intersection point:", bisection_method.bisection_method(-3, 2, f))
-    print("Intersection point:", bisection_method.bisection_method(-3, 2, f_d))
-elif option == 2:
-    print(newton_raphson.newton_raphson(3, 4, f, f_d, epsilon))
-elif option == 3:
-    print("Answer: ", secant_method.secant_method(3, 4, f, epsilon))
+
+    except ValueError:
+        print("Wrong input")
+
+if None in answer:
+    answer.remove(None)
+print("Intersection points:", *answer)
+
+
+
+
+
