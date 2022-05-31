@@ -4733,3 +4733,2648 @@ Elementary matrix number 13:
 [0, 1, 0]
 [0, 0, 1]
 
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 1.0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 3:
+[1, 0, 0]
+[0.25, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0]
+[0, 1.1428571428571428, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[0, 1, 0.2857142857142857]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 1, 0]
+[-0.5, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0.29166666666666663, 1]
+
+Elementary matrix number 8:
+[0.5, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 9:
+[1, 0.29166666666666663, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[-0.26373626373626374, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 11:
+[1, 0, 0]
+[0, 1.1666666666666665, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0, 0]
+[0, 1, 0]
+[-0.07692307692307691, 0, 1]
+
+Elementary matrix number 13:
+[0.9230769230769231, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 15:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 16:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 17:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 18:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 19:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 20:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 21:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 22:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 23:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 24:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 25:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 26:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 27:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 28:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 1.0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 3:
+[1, 0, 0]
+[0.25, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0]
+[0, 1.1428571428571428, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[0, 1, 0.2857142857142857]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 1, 0]
+[-0.5, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0.29166666666666663, 1]
+
+Elementary matrix number 8:
+[0.5, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 9:
+[1, 0.29166666666666663, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[-0.26373626373626374, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 11:
+[1, 0, 0]
+[0, 1.1666666666666665, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0, 0]
+[0, 1, 0]
+[-0.07692307692307691, 0, 1]
+
+Elementary matrix number 13:
+[0.9230769230769231, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 1.0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 3:
+[1, 0, 0]
+[0.25, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0]
+[0, 1.1428571428571428, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[0, 1, 0.2857142857142857]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 1, 0]
+[-0.5, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0.29166666666666663, 1]
+
+Elementary matrix number 8:
+[0.5, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 9:
+[1, 0.29166666666666663, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[-0.26373626373626374, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 11:
+[1, 0, 0]
+[0, 1.1666666666666665, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0, 0]
+[0, 1, 0]
+[-0.07692307692307691, 0, 1]
+
+Elementary matrix number 13:
+[0.9230769230769231, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 15:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 16:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 17:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 18:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 19:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 20:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 21:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 22:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 23:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 24:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 25:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 26:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 27:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 28:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 1.0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 3:
+[1, 0, 0]
+[0.25, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0]
+[0, 1.1428571428571428, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[0, 1, 0.2857142857142857]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 1, 0]
+[-0.5, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0.29166666666666663, 1]
+
+Elementary matrix number 8:
+[0.5, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 9:
+[1, 0.29166666666666663, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[-0.26373626373626374, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 11:
+[1, 0, 0]
+[0, 1.1666666666666665, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0, 0]
+[0, 1, 0]
+[-0.07692307692307691, 0, 1]
+
+Elementary matrix number 13:
+[0.9230769230769231, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 15:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 16:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 17:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 18:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 19:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 20:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 21:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 22:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 23:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 24:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 25:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 26:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 27:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 28:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 1.0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 3:
+[1, 0, 0]
+[0.25, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0]
+[0, 1.1428571428571428, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[0, 1, 0.2857142857142857]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 1, 0]
+[-0.5, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0.29166666666666663, 1]
+
+Elementary matrix number 8:
+[0.5, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 9:
+[1, 0.29166666666666663, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[-0.26373626373626374, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 11:
+[1, 0, 0]
+[0, 1.1666666666666665, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0, 0]
+[0, 1, 0]
+[-0.07692307692307691, 0, 1]
+
+Elementary matrix number 13:
+[0.9230769230769231, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 15:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 16:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 17:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 18:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 19:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 20:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 21:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 22:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 23:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 24:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 25:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 26:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 27:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 28:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 1.0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 3:
+[1, 0, 0]
+[0.25, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0]
+[0, 1.1428571428571428, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[0, 1, 0.2857142857142857]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 1, 0]
+[-0.5, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0.29166666666666663, 1]
+
+Elementary matrix number 8:
+[0.5, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 9:
+[1, 0.29166666666666663, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[-0.26373626373626374, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 11:
+[1, 0, 0]
+[0, 1.1666666666666665, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0, 0]
+[0, 1, 0]
+[-0.07692307692307691, 0, 1]
+
+Elementary matrix number 13:
+[0.9230769230769231, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 1.0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 3:
+[1, 0, 0]
+[0.25, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0]
+[0, 1.1428571428571428, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[0, 1, 0.2857142857142857]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 1, 0]
+[-0.5, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0.29166666666666663, 1]
+
+Elementary matrix number 8:
+[0.5, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 9:
+[1, 0.29166666666666663, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[-0.26373626373626374, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 11:
+[1, 0, 0]
+[0, 1.1666666666666665, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0, 0]
+[0, 1, 0]
+[-0.07692307692307691, 0, 1]
+
+Elementary matrix number 13:
+[0.9230769230769231, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 1.0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 3:
+[1, 0, 0]
+[0.25, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0]
+[0, 1.1428571428571428, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[0, 1, 0.2857142857142857]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 1, 0]
+[-0.5, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0.29166666666666663, 1]
+
+Elementary matrix number 8:
+[0.5, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 9:
+[1, 0.29166666666666663, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[-0.26373626373626374, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 11:
+[1, 0, 0]
+[0, 1.1666666666666665, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0, 0]
+[0, 1, 0]
+[-0.07692307692307691, 0, 1]
+
+Elementary matrix number 13:
+[0.9230769230769231, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 1.0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 3:
+[1, 0, 0]
+[0.25, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0]
+[0, 1.1428571428571428, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[0, 1, 0.2857142857142857]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 1, 0]
+[-0.5, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0.29166666666666663, 1]
+
+Elementary matrix number 8:
+[0.5, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 9:
+[1, 0.29166666666666663, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[-0.26373626373626374, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 11:
+[1, 0, 0]
+[0, 1.1666666666666665, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0, 0]
+[0, 1, 0]
+[-0.07692307692307691, 0, 1]
+
+Elementary matrix number 13:
+[0.9230769230769231, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 1:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 2:
+[1, 0, 0]
+[0, 0, 1]
+[0, 1, 0]
+
+Elementary matrix number 3:
+[1, -0.3333333333333333, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 4:
+[1, 0, 0.5]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 5:
+[1, 0, 0]
+[-0.8571428571428571, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 6:
+[1, 0, 0]
+[0, 0.4666666666666667, 0]
+[0, 0, 1]
+
+Elementary matrix number 7:
+[1, 0, 0]
+[0, 1, -1.05]
+[0, 0, 1]
+
+Elementary matrix number 8:
+[1, 0, 0]
+[0, 1, 0]
+[-0.8571428571428571, 0, 1]
+
+Elementary matrix number 9:
+[1, 0, 0]
+[0, 1, 0]
+[0, 1.0389610389610389, 1]
+
+Elementary matrix number 10:
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 0.25]
+
+Elementary matrix number 11:
+[0.8571428571428571, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 12:
+[1, 0.7792207792207791, 0]
+[0, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 13:
+[1, 0, 0]
+[5.774999999999999, 1, 0]
+[0, 0, 1]
+
+Elementary matrix number 14:
+[1, 0, 0]
+[0, -0.9090909090909091, 0]
+[0, 0, 1]
+
+Elementary matrix number 15:
+[1, 0, 0]
+[0, 1, 0]
+[1.4999999999999993, 0, 1]
+
+Elementary matrix number 16:
+[5.499999999999998, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+
