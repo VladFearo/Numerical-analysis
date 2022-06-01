@@ -237,9 +237,18 @@ def spline_nat(points, x):
         temp = []
         counter += 1
     sol_vector = matrix(sol_mat)
+    temp = []
+    for i in sol_vector:
+        temp.append(i[0])
+    sol_vector = temp
+    sol_vector.append(0)
+
     for i in range(len(points) - 1):
         if points[i][X_Value] < x < points[i + 1][X_Value]:
-            return ((((points[i + 1][X_Value] - x) ** 3 * sol_vector[i]) + (x - points[i][X_Value])**3 * sol_vector[i] + 1) / 6 * h[i]) + points[i + 1][X_Value]
+            fract1 = (((points[i+1][X_Value]-x)**3) *sol_vector[i-1] + ((x-points[i][X_Value])**3)*sol_vector[i]) / 6*h[i]
+            fract2 = ((points[i+1][X_Value]-x)*points[i][Y_Value] + (x-points[i][X_Value]) * points[i+1][Y_Value])/h[i]
+            fract3 = ((points[i+1][X_Value]-x)*sol_vector[i-1] + ((x-points[i][X_Value]) * sol_vector[i]) * h[i] ) / 6
 
+    return fract1 + fract2 - fract3
 
 print(spline_nat(test_points, math.pi / 3))
