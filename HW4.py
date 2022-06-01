@@ -195,7 +195,7 @@ def spline_nat(points, x):
     delta = []
     delta.append(0)
     miu = []
-    miu.append(1)
+    miu.append(0)  #was 1
     d = []
     d.append(0)
     mat = []
@@ -211,8 +211,8 @@ def spline_nat(points, x):
         miu.append(1 - delta[i])
     for i in range(1, len(points) - 1):
         d.append((6 / (h[i - 1] + h[i])) *
-                 ((points[i + 1][X_Value] - points[i + 1][X_Value])
-                  / h[i] - ((points[i][X_Value] - points[i - 1][X_Value]) / h[i - 1])))
+                 (((points[i + 1][Y_Value] - points[i][Y_Value])
+                  / h[i]) - ((points[i][Y_Value] - points[i - 1][Y_Value]) / h[i - 1])))
     for i in range(len(points)):
         for j in range(len(points)):
             temp.append(0)
