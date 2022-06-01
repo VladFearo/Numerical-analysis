@@ -192,36 +192,54 @@ test_points = [[0, 0], [math.pi / 6, 0.5], [math.pi / 4, 0.7072], [math.pi / 2, 
 
 def spline_nat(points, x):
     h = []
-    delta = []
-    delta.append(0)
+    lmbda = []
+    lmbda.append(0)
     miu = []
-    miu.append(0)  #was 1
+    miu.append(0)  # was 1
     d = []
     d.append(0)
     mat = []
     temp = []
     counter = -1
-    two = [2]*len(points)
-    rotate = [miu, two, delta]
+    two = [2] * len(points)
+    rotate = [miu, two, lmbda]
     for i in range(len(points) - 1):
         h.append(points[i + 1][X_Value] - points[i][X_Value])
-    for i in range(1, len(points)-1):
-        delta.append(h[i] / (h[i] + h[i - 1]))
-    for i in range(len(points)-1):
-        miu.append(1 - delta[i])
+    for i in range(1, len(points) - 1):
+        lmbda.append(h[i] / (h[i] + h[i - 1]))
+    for i in range(1, len(points) - 1):
+        miu.append(1 - lmbda[i])
     for i in range(1, len(points) - 1):
         d.append((6 / (h[i - 1] + h[i])) *
                  (((points[i + 1][Y_Value] - points[i][Y_Value])
-                  / h[i]) - ((points[i][Y_Value] - points[i - 1][Y_Value]) / h[i - 1])))
+                   / h[i]) - ((points[i][Y_Value] - points[i - 1][Y_Value]) / h[i - 1])))
     for i in range(len(points)):
         for j in range(len(points)):
             temp.append(0)
         mat.append(temp)
         temp = []
-    for i in range(len(points)-1):
-        for j in range(len(points)-1):
-            mat[i][j+counter] = rotate[j % 3][j]
+    for i in range(len(points) - 1):
+        for j in range(len(points) - 1):
+            mat[i][j + counter] = rotate[j % 3][i]
         counter += 1
-    return mat
+    for row in mat:
+        row.pop(0), row.pop(-1)
+    mat.pop(0), mat.pop(-1)
+    print(mat)
+    sol_mat = []
+    temp = []
+    counter = 1
+    for row in mat:
+        for col in row:
+            temp.append(col)
+        temp.append(d[counter])
+        sol_mat.append(temp)
+        temp = []
+        counter += 1
+    sol_vector = matrix(sol_mat)
+    for i in range(len(points) - 1):
+        if points[i][X_Value] < x < points[i + 1][X_Value]:
+            return ((((points[i + 1][X_Value] - x) ** 3 * sol_vector[i]) + (x - points[i][X_Value])**3 * sol_vector[i] + 1) / 6 * h[i]) + points[i + 1][X_Value]
 
-print(spline_nat(test_points, x=0))
+
+print(spline_nat(test_points, math.pi / 3))
