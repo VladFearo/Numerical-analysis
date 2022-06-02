@@ -1,9 +1,5 @@
 import math
 
-points = [(0, 0), (1, 0.8415), (2, 0.9093), (3, 0.1411), (4, -0.7568), (5, -0.9589), (6, -0.2794)]
-X_Value = 0
-Y_Value = 1
-
 
 def matrix_mul(mat1, mat2):
     """
@@ -102,7 +98,7 @@ def matrix(mat1):
     for i in X:
         tempM.append(i[0])
     # X = list(map(lambda x: round(x, 2), tempM))
-    print('the solution vector is:', *X)
+    #print('the solution vector is:', *X)
     return X
 
 
@@ -179,15 +175,21 @@ def neville_interpolation(points, xf):
     n = len(points)
     x = 0
     y = 1
+    pointlist = []
+    for i in points:
+        pointlist.append(list(i))
+
+
+   # pointslist = list(points)
     for i in range(1, n, +1):
         for j in range(n - 1, i - 1, -1):
-            points[j][y] = ((xf - points[j - i][x]) * points[j][y] - (xf - points[j][x]) * points[j - 1][y]) / (
-                    points[j][x] - points[j - i][x])
-    result = str(points[n - 1][y])
+            pointlist[j][y] = ((xf - pointlist[j - i][x]) * pointlist[j][y] - (xf - pointlist[j][x]) * pointlist[j - 1][y]) / (
+                    pointlist[j][x] - pointlist[j - i][x])
+    result = str(pointlist[n - 1][y])
     return result
 
 
-test_points = [[0, 0], [math.pi / 6, 0.5], [math.pi / 4, 0.7072], [math.pi / 2, 1]]
+
 
 
 def spline_nat(points, x):
@@ -225,7 +227,7 @@ def spline_nat(points, x):
     for row in mat:
         row.pop(0), row.pop(-1)
     mat.pop(0), mat.pop(-1)
-    print(mat)
+    #print(mat)
     sol_mat = []
     temp = []
     counter = 1
@@ -251,4 +253,40 @@ def spline_nat(points, x):
 
     return fract1 + fract2 - fract3
 
-print(spline_nat(test_points, math.pi / 3))
+#print(spline_nat(test_points, math.pi / 3))
+
+points = [(0, 0), (1, 0.8415), (2, 0.9093), (3, 0.1411), (4, -0.7568), (5, -0.9589), (6, -0.2794)]
+X_Value = 0
+Y_Value = 1
+x = 2.5
+test_points = [[0, 0], [math.pi / 6, 0.5], [math.pi / 4, 0.7072], [math.pi / 2, 1]]
+option = 0
+print("Table of dots", points ,"\nx dot" ,x )
+while True:
+    try:
+        option = int(input("\nPlease choose interpolation\n1.linear\n2.polinomial\n3.lagrange\n4.neville\n5.spline\n6.exit\n "))
+        if option == 1:
+            print("y dot:",linear(points,x))
+
+        if option == 2:
+            print("y dot:",polynomial(points ,x))
+
+        if option == 3:
+            print("y dot:",lagrange(points ,x))
+
+        if option == 4:
+            print("y dot:",neville_interpolation(points ,x))
+
+        if option == 5:
+            print("y dot:",spline_nat(test_points ,x = math.pi / 3))
+
+        if option == 6:
+            break
+
+
+
+
+
+
+    except ValueError:
+        print("Wrong input")
