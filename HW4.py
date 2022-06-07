@@ -260,7 +260,7 @@ def spline_nat(points, x):
 points = [(0, 0), (1, 0.8415), (2, 0.9093), (3, 0.1411), (4, -0.7568), (5, -0.9589), (6, -0.2794)]
 X_Value = 0
 Y_Value = 1
-x = 2.5
+x = 1.5
 test_points = [[0, 0], [math.pi / 6, 0.5], [math.pi / 4, 0.7072], [math.pi / 2, 1]]
 option = 0
 print("Table of dots", points, "\nx dot", x)
@@ -281,15 +281,10 @@ while True:
             print("y dot:", neville_interpolation(points, x))
 
         if option == 5:
-            print("y dot:", spline_nat(test_points, x=math.pi / 3))
+            print("y dot:", spline_nat(test_points, x = math.pi / 3))
 
         if option == 6:
             break
-
-
-
-
-
 
     except ValueError:
         print("Wrong input")
