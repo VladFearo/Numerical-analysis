@@ -1,3 +1,4 @@
+import math
 
 import sympy as sp
 
@@ -16,7 +17,7 @@ def deriv_poly(poly):
     return deriv
 
 
-def bisection_method(a, b, f, epsilon):
+def bisection_method(a, b, f,epsilon):
     """
     returns an intersection point between a function and the x axis between point a and b using the bisection method
     :param a: a number repressenting a point on the x axis
@@ -25,20 +26,22 @@ def bisection_method(a, b, f, epsilon):
     :return: a number repressenting the intersection point between the fucntion and the x axis
     """
     global i
-    m = (a + b) / 2
+    m = (a+b)/2
+
     print(f'Iter {i}: {m}')
     i += 1
     if round(f(m), 5) != 0:
         if f(a) * f(m) < 0:
-            return bisection_method(a, m, f , epsilon)
+            return bisection_method(a, m, f,epsilon)
         elif f(m) * f(b) < 0:
-            return bisection_method(m, b, f , epsilon)
+            return bisection_method(m, b, f,epsilon)
         else:
             i = 1
-            return
     else:
         i = 1
         return round(m, 3)
+
+i = 1
 
 
 def create_poly_func(f):
@@ -89,25 +92,29 @@ def secant_method(a, b, f, epsilon):
     :return: The root we were looking for in the given test range
     """
     i = 1
+    N = 30
     while True:
         p = b - ((f(b) * (b - a)) / (f(b) - f(a)))
         print(f'Iter: {i}. {p}')
         i += 1
         if abs(p - b) < epsilon:
             return round(p, 3)
+        if i >=N:
+            print("not convergent!")
+            return
         a = b
         b = p
 
 x = sp.symbols('x')
 poly = [4, 0, -48, 5]
-my_f = 4*x**3 - 48*x + 5
+my_f = sp.cos(2*math.e**-2*x) / x**2+5*x+6
 print("Polynomial: ", my_f)
 my_f1 = sp.diff(my_f, x)
-start_point = 2
-end_point = 4
+start_point = -1.1
+end_point = 0
 bigRange = (start_point, end_point)
 print("Range: ", bigRange)
-f = create_poly_func(poly)
+f = lambda x: math.cos(2 * math.e ** (-2 * x)) / (x ** 2 + 5 * x + 6)
 d_poly = deriv_poly(poly)
 f_d = create_poly_func(d_poly)
 m = (start_point + end_point) / 2
@@ -141,7 +148,9 @@ while(option not in checker):
 
         elif option == 3:
             while end <= end_point:
-                answer.add(secant_method(start, end, f, epsilon))
+                anw = secant_method(start, end, f, epsilon)
+                if anw != None and anw < end_point:
+                    answer.add(anw)
                 print("-----------------------")
                 start = end
                 end += 0.1

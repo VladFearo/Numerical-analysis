@@ -149,7 +149,11 @@ def polynomial(points, x):
     mat = [[1, points[1][X_Value], points[1][X_Value] ** 2, points[1][Y_Value]],
            [1, points[2][X_Value], points[2][X_Value] ** 2, points[2][Y_Value]],
            [1, points[3][X_Value], points[3][X_Value] ** 2, points[3][Y_Value]]]
+    print("matrix:")
+    for _ in mat:
+        print(mat)
     sol = matrix(mat)
+    print(f'y={sol[0][0]} + {sol[1][0]}x + {sol[2][0]}x^2')
     return sol[0][0] + sol[1][0] * x + sol[2][0] * x ** 2
 
 
@@ -185,6 +189,9 @@ def neville_interpolation(points, xf):
             pointlist[j][y] = ((xf - pointlist[j - i][x]) * pointlist[j][y] - (xf - pointlist[j][x]) * pointlist[j - 1][
                 y]) / (
                                       pointlist[j][x] - pointlist[j - i][x])
+            print(pointlist[j][y])
+    print(f'y=({xf}-{pointlist[j-1][x]})*{pointlist[j][y]}-({xf}-{pointlist[j][x]})*{pointlist[j - 1][y]}/({pointlist[j][x]}-{pointlist[j - i][x]}))')
+
     result = str(pointlist[n - 1][y])
     return result
 
@@ -257,10 +264,11 @@ def spline_nat(points, x):
 
 # print(spline_nat(test_points, math.pi / 3))
 
-points = [(0, 0), (1, 0.8415), (2, 0.9093), (3, 0.1411), (4, -0.7568), (5, -0.9589), (6, -0.2794)]
+points = [[0.35, -213.5991], [0.4, -204.4416], [0.55, -194.9375], [0.65, -185.0256], [0.7, -174.6711],
+          [0.85, -163.8656], [0.9, -152.6271]]
 X_Value = 0
 Y_Value = 1
-x = 1.5
+x = 0.75
 test_points = [[0, 0], [math.pi / 6, 0.5], [math.pi / 4, 0.7072], [math.pi / 2, 1]]
 option = 0
 print("Table of dots", points, "\nx dot", x)
@@ -281,7 +289,7 @@ while True:
             print("y dot:", neville_interpolation(points, x))
 
         if option == 5:
-            print("y dot:", spline_nat(test_points, x = math.pi / 3))
+            print("y dot:", spline_nat(test_points, x=math.pi / 3))
 
         if option == 6:
             break
