@@ -25,23 +25,26 @@ def bisection_method(a, b, f,epsilon):
     :param f: a python function repressenting a polynomail function
     :return: a number repressenting the intersection point between the fucntion and the x axis
     """
-    global i
-    m = (a+b)/2
+    try:
+        global i
+        m = (a+b)/2
 
-    print(f'Iter {i}: {m}')
-    i += 1
-    if round(f(m), 5) != 0:
-        if f(a) * f(m) < 0:
-            return bisection_method(a, m, f,epsilon)
-        elif f(m) * f(b) < 0:
-            return bisection_method(m, b, f,epsilon)
+        print(f'Iter {i}: {m}')
+        i += 1
+        if round(f(m), 5) != 0:
+            if f(a) * f(m) < 0:
+                return bisection_method(a, m, f,epsilon)
+            elif f(m) * f(b) < 0:
+                return bisection_method(m, b, f,epsilon)
+            else:
+                i = 1
         else:
             i = 1
-    else:
-        i = 1
-        return round(m, 3)
+            return round(m, 3)
 
-i = 1
+        i = 1
+    except ZeroDivisionError:
+        return
 
 
 def create_poly_func(f):
