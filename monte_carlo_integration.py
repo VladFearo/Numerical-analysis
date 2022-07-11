@@ -3,29 +3,31 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 a = 0
-b = np.pi
+b = 1
 N = 10000
 times = 1000
 
 
 def f(x):
-    return np.sin(x)
+    return x**2
 
 
 y = []
 
 
-def crude_monte_carlo(N):
+def crude_monte_carlo(start, end, N):
     """
     Crude monte carlo method for calculating an integral
-    :param N: a number for the iterations of the function
-    :return: the integral
+    :param start: start border of the function
+    :param end: end border of the function
+    :param N: number of iterations
+    :return: the integral from start to end
     """
     integral = 0.0
     for _ in range(N):
-        x_i = random.uniform(a, b)
+        x_i = random.uniform(start, end)
         integral += f(x_i)
-    answer = (b - a) / float(N) * integral
+    answer = (end - start) / float(N) * integral
     return answer
 
 
@@ -38,20 +40,24 @@ def experiment(times):
     """
     areas = []
     for _ in range(times):
-        areas.append(crude_monte_carlo(N))
+        areas.append(crude_monte_carlo(a,b,N))
     plt.xlabel('x')
     plt.ylabel('density')
     plt.hist(areas, bins=31, ec="black")
     plt.show()
 
 
-def monte_carlo(N):
+def r_a_monte_carlo(start, end, N):
     """
-    A simple example of distributing points randomly and calculating how many points are inside the function then
-    dividing the answer by the total number of points and multiplying by the distance of the function borders :param
-    N: :return:
+    A rejection acception monte carlo function that distributes points randomly and calculates how many points are inside
+     the function then dividing the answer by the total number of points and multiplying by the distance of the function
+      borders
+       :param start: start border of the function
+       :param end: end border of the function
+       :param N: number of iterations
+       :return: None
     """
-    randy = np.random.uniform(0, 1, N)
+    randy = np.random.uniform(start, end, N)
     inside = 0
     for _ in range(N):
         color = "green"
@@ -67,19 +73,40 @@ def monte_carlo(N):
     plt.show()
 
 
-while True:
+def stratified_sampling_monte_carlo(intervals, N):
+    """
+    a fuction that calculates an integral based on the stratified sampling method seperating the funcion that is
+    integrated into intervals and calculates its integral by the crude method
+     :param intervals: the number intervals the function is sliced
+     :param N: the number of iterations the crude method works at
+     :return: the total integral from a to b
+    """
+    distance = b-a
+    interval = distance/intervals
+    start = a
+    total = 0
+    while start < b:
+        total += crude_monte_carlo(start, start+interval, N)
+        start = start + interval
+    return total
 
+
+while True:
     try:
-        op = int(input("Pick an option:\n1) Simple monte carlo\n2) Crude monte carlo\n3) Experiment\n"))
+        op = int(input("Pick an option:\n1) Simple monte carlo\n2) Crude monte carlo\n3) stratified_sampling\n4) "
+                       "experiment\n"))
 
         if op == 1:
-            monte_carlo(N)
+            r_a_monte_carlo(a, b, N)
             break
         elif op == 2:
-            answer = crude_monte_carlo(N)
+            answer = crude_monte_carlo(a, b, N)
             print(f"The integral is: {answer}")
             break
         elif op == 3:
+            print("The integral is:", stratified_sampling_monte_carlo(3,N))
+            break
+        elif op == 4:
             experiment(times)
             break
         else:
